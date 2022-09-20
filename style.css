@@ -3,7 +3,10 @@
   margin: auto;
 }
 
-.answer {
+#answer {
   font-size:  larger;
+}
+
+.invis {
   visibility: hidden;
 }

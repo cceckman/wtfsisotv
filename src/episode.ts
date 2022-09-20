@@ -1,4 +1,4 @@
-import * as EPISODE_DATA from "../data/data.json";
+import EPISODE_DATA from "../data/data.json";
 
 export { Episode, Series, pick_episode };
 
@@ -33,7 +33,7 @@ const SERIES_NAME: Map<Series, string> = new Map([
 
 namespace Series {
   export function fullName(series: Series): string {
-    return "Star Trek: " + SERIES_NAME[series];
+    return "Star Trek: " + SERIES_NAME.get(series);
   }
 }
 

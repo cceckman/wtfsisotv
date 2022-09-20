@@ -1,8 +1,13 @@
 
 redo-ifchange src/*.ts data/data.json
 
+rm -rf js/
+
 esbuild \
-  --outfile="$3" \
+  --outdir=js \
   --bundle \
   --minify \
+  --sourcemap \
   src/app.ts
+
+sha256sum js/* >"$3"

@@ -1,0 +1,9 @@
+
+.center {
+  margin: auto;
+}
+
+.answer {
+  font-size:  larger;
+  visibility: hidden;
+}

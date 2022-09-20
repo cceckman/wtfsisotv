@@ -5,13 +5,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v3
       - name: Create page archive
-        run: ci.sh
+        run: ./ci.sh
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
           name: github-pages
-          path: github-pages.tar.gz
+          path: ./github-pages.tar.gz
 
   # Deploy job
   deploy:

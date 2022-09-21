@@ -17,8 +17,8 @@ function render(episode_info: Episode) {
   // Swap to "display" mode.
   const answer = document.getElementById("answer");
   const idk = document.getElementById("idk");
+  idk?.parentElement?.removeChild(idk);
   answer?.classList.remove("invis");
-  idk?.classList.add("invis");
 }
 
 // On load...

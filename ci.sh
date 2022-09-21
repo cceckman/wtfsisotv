@@ -1,4 +1,4 @@
 #! /bin/sh
 
-npx esbuild@0.15.8
+npm install -g esbuild@0.15.8
 ./do github-pages.tar.gz

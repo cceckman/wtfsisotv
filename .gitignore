@@ -1,0 +1,7 @@
+*.js
+*.tar.gz
+*.dir
+js/
+pages/
+.redo/
+

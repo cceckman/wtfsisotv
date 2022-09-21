@@ -1,1 +1,1 @@
-rm -rf *.js *.tar.gz data/*.json pages/ js/
+rm -rf *.dir *.js *.tar.gz data/*.json pages/ js/

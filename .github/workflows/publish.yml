@@ -9,11 +9,10 @@ jobs:
         uses: actions/checkout@v3
       - name: Create page archive
         run: ./ci.sh
-      - name: Upload artifact
-        uses: actions/upload-artifact@v1
+      - name: Upload files
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages
-          path: ./github-pages.tar.gz
+          path: pages/
 
   # Deploy job
   deploy:
